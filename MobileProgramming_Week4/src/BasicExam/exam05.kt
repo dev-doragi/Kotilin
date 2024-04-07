@@ -1,3 +1,5 @@
+package BasicExam
+
 fun main() {
     var num1 : Int = 1
     var num2 : Int = 0

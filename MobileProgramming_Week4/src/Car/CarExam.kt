@@ -16,7 +16,7 @@ fun main() {
     myCar1.upSpeed(50)
     println("Car1의 색상은 " + myCar1.color + "이며 속도는 " + myCar1.speed + "이다.")
 
-    myCar2.upSpeed(20)
+    myCar2.downSpeed(20)
     println("Car2의 색상은 " + myCar2.color + "이며 속도는 " + myCar2.speed + "이다.")
 
     myCar3.upSpeed(259)

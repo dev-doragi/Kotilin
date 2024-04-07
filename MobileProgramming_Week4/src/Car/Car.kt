@@ -1,6 +1,6 @@
 package Car
 
-class Car {
+open class Car { // open -> 상속 가능
     var color : String = ""
     var speed : Int = 0
 
@@ -27,8 +27,8 @@ class Car {
 
     constructor() {}
 
-    fun upSpeed(value: Int) {
-        if (speed + value >= 200) {
+    open fun upSpeed(value: Int) {
+        if (speed + value >= MAXSPEED) {
             print("과속 단속에 걸린 차량, ")
             speed = 200
         }
@@ -36,9 +36,11 @@ class Car {
             speed += value
     }
 
-    fun downSpeed(value: Int) {
-        if (speed - value <= 0)
+    open fun downSpeed(value: Int) {
+        if (speed - value <= MINSPEED) {
+            println("차가 정지하였습니다.")
             speed = 0
+        }
         else
             speed -= value
     }

@@ -1,3 +1,5 @@
+package BasicExam
+
 // 전역 변수는 선언과 동시에 초기화를 해야한다.
 var myVar : Int = 100 
 
